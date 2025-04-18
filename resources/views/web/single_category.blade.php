@@ -1,3 +1,7 @@
-<x-layout> 
-   <h3>Ini adalah halaman Single Category</h3> 
-</x-layout>  
+<x-layout>
+<h1>{{ $category ? $category['name'] : 'Default Name' }}</h1>
+    <hr>
+    <p>
+        {{ $category ? $category['description'] : 'Default Description' }}
+    </p>
+</x-layout>
